@@ -6,7 +6,7 @@ The application consumes REST APIs exposed by a Spring Boot backend. All debt ca
 
 Tech Stack: React, JavaScript (ES6+), React Router, REST APIs
 
-Backend Repository: https://github.com/<your-username>/expense-tracker-backend
+Backend Repository: AyaanNaqvi/expense-tracker-backend https://share.google/BUP8HBtuQ4GbmrUQH
 
 ## Running the Project
 1. Clone the repository
