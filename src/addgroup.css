@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.addscreen {
+  position: fixed;
+  inset: 0;
+
+  background-image: url("/public/monitor.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.addgrouptextandinput{
+    position: relative;
+top: 180px;
+left:655px;
+
+  opacity: 0.8;
+}

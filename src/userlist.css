@@ -1,0 +1,21 @@
+
+.userlist {
+
+  position: relative;
+  min-height: 100vh;
+  left: 200px;
+  width: 400px;
+}
+
+.userlist::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("/public/monitor.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+}
