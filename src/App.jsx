@@ -23,7 +23,7 @@ export function Home({setgroupId,userId,users}) {
   const navigate= useNavigate();
  
   
-  
+  if (!users || users.length==0) return null;
   
     useEffect(()=>{
     async function fetchlist(){ 
@@ -45,8 +45,8 @@ fetchdebt();
   },[groups]
 )
 
-async function findusername(userId,users){
-  const user= await users.find((u)=>u.id==userId)
+ function findusername(userId,users){
+  const user=  users.find((u)=>u.id==userId)
    return user? user.username: "no username"
 }
 
