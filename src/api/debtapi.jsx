@@ -2,7 +2,7 @@ import React from "react";
 import { API_BASE } from "./apimain";
 
 export async  function debtapi(){
-    const debtlist= await fetch(`${API_BASE}/debts`,{
+    const debtlist= await fetch(`https://expense-tracker-backend-jgkz.onrender.com/debts`,{
         method: "GET"
     }
 )

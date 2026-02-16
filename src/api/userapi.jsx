@@ -1,7 +1,7 @@
 import React from "react";
 import { API_BASE } from "./apimain";
 export async function userapi(payload){
-    const apires= await fetch(`${API_BASE}/user`,{
+    const apires= await fetch(`https://expense-tracker-backend-jgkz.onrender.com/user`,{
 
 method: "POST",
 headers: {"content-type": "application/json"},
@@ -14,7 +14,7 @@ if (!apires.ok) throw new Error ("error with user addition");
     
 }
 export async function getUser(){
-    const apires= await fetch(`${API_BASE}/user`,
+    const apires= await fetch(`https://expense-tracker-backend-jgkz.onrender.com/user`,
         {
             method: "GET"
         }

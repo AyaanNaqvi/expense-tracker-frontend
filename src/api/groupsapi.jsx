@@ -4,7 +4,7 @@ import { API_BASE } from "./apimain";
 
 export async function groupapi(payload){
 const apires= await fetch(
-    `${API_BASE}/groups`,{
+    `https://expense-tracker-backend-jgkz.onrender.com/groups`,{
         method: "POST",
     headers:{
         "content-type": "application/json"
@@ -16,7 +16,7 @@ if (!apires.ok) throw new Error ("failed to create group")
     return apires.json();
 }
 export async function getGroups(){
-const grouplist= await fetch ( `${API_BASE}/groups`,
+const grouplist= await fetch ( `https://expense-tracker-backend-jgkz.onrender.com/groups`,
     {
 method: "GET"
     })
@@ -27,7 +27,7 @@ return grouplist.json();
 
 export async function deletegroup(groupId){
     console.log(groupId)
-    const deletedgroup= await fetch(`${API_BASE}/groups/${groupId}`,{
+    const deletedgroup= await fetch(`https://expense-tracker-backend-jgkz.onrender.com/groups/${groupId}`,{
         method:"DELETE"
     })
     if(!deletedgroup.ok) throw new Error ("delete error")
