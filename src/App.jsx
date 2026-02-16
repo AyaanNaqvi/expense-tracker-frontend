@@ -23,7 +23,7 @@ export function Home({setgroupId,userId,users}) {
   const navigate= useNavigate();
  
   
-  if (!users || users.length==0) return null;
+
   
     useEffect(()=>{
     async function fetchlist(){ 
@@ -42,7 +42,7 @@ useEffect(()=>{
     }
 
 fetchdebt();
-  },[groups]
+  },[groups,users]
 )
 
  function findusername(userId,users){
