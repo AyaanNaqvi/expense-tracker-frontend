@@ -47,7 +47,7 @@ fetchdebt();
 
 async function findusername(userId,users){
   const user= await users.find((u)=>u.id==userId)
-   return user? user.username: null
+   return user? user.username: "no username"
 }
 
 return (
