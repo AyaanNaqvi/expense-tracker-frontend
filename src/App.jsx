@@ -36,6 +36,7 @@ export function Home({setgroupId,userId,users}) {
 
 useEffect(()=>{
     async function fetchdebt(){
+      if (!users.length) return;
       const debtmap= await debtapi()
       setdebts(debtmap);
     }
