@@ -122,7 +122,8 @@ onClick={()=>{
 
 <ul className='expenselist'>
 
-{Object.entries(debts).map(
+{users.length == 0? null :
+Object.entries(debts).map(
   ([key,amount])=>{
     const [firstvalue,secondvalue]=key.split("-") //first->second is +
     const paidby= amount>0? secondvalue: firstvalue;
