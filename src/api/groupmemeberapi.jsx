@@ -1,9 +1,10 @@
 import React from "react";
+import { API_BASE } from "./apimain";
 
 export async function groupmembersapi(userId,groupId){
     console.log("POST groupId:", groupId);
 console.log("POST userId:", userId);
-    const apires= await fetch(`http://localhost:8080/groups/${groupId}/users/${userId}`,{
+    const apires= await fetch(`${API_BASE}/${userId}`,{
 method:"POST"
     })
    
@@ -12,7 +13,7 @@ method:"POST"
 }
 
 export async function getusers(groupId){
-    const apilistres= await fetch (`http://localhost:8080/groups/${groupId}/users`,{
+    const apilistres= await fetch (`${API_BASE}/groups/${groupId}/users`,{
         method: "GET"
     })
    

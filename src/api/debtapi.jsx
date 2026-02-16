@@ -1,7 +1,8 @@
 import React from "react";
+import { API_BASE } from "./apimain";
 
 export async  function debtapi(){
-    const debtlist= await fetch(`http://localhost:8080/debts`,{
+    const debtlist= await fetch(`${API_BASE}/debts`,{
         method: "GET"
     }
 )

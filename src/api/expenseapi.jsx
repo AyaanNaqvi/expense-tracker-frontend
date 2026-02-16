@@ -1,9 +1,10 @@
 import React from "react";
+import { API_BASE } from "./apimain";
 
 export async function expenseApi(groupId, userId, expenseamount) {
     console.log("yeah",groupId,userId, expenseamount)
   const apires = await fetch(
-    `http://localhost:8080/groups/${groupId}/expenses?userId=${userId}&amount=${expenseamount}`,
+    `${API_BASE}/groups/${groupId}/expenses?userId=${userId}&amount=${expenseamount}`,
     { method: "POST" }
   );
 

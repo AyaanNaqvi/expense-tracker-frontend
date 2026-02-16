@@ -1,6 +1,7 @@
 import React from "react";
+import { API_BASE } from "./apimain";
 export async function userapi(payload){
-    const apires= await fetch("http://localhost:8080/user",{
+    const apires= await fetch(`${API_BASE}/user`,{
 
 method: "POST",
 headers: {"content-type": "application/json"},
@@ -13,7 +14,7 @@ if (!apires.ok) throw new Error ("error with user addition");
     
 }
 export async function getUser(){
-    const apires= await fetch(`http://localhost:8080/user`,
+    const apires= await fetch(`${API_BASE}/user`,
         {
             method: "GET"
         }
