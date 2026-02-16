@@ -31,7 +31,7 @@ return (
       style={{
         width: "100px"
       }}>
-    {users.map((u) => {
+    {Array.isArray(users) && users.map((u) => {
 
       return (
 <li

@@ -91,7 +91,7 @@ onClick={async () => {
 <button
 className='buttons'
 
-onClick={()=>{
+onClick={()=>{ 
   setgroupId(gp.Id)
   navigate("/members")
 }

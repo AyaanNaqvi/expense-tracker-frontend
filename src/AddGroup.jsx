@@ -59,7 +59,7 @@ onClick={async()=>{
     setgroupId(group.Id)
     console.log("group",group)
     setmodalvisible(true)
-    setaddtext("")
+
 setexpenseamount("")}}  
 
 > +</button>
@@ -92,9 +92,13 @@ setexpenseamount("")}}
   onRequestClose={()=>{setmodalvisible(false)
 
   }}>
-    <h1>
-        Add members to the group
+    <h1 style={{ 
+      "font-size": "23px",
+  "line-height": 9.5,
+  "margin": "18px"}}>
+        Add members to {addtext}
     </h1>
+   
 <input
 placeholder="add name"
 value={memberstext}
