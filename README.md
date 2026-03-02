@@ -1,5 +1,7 @@
 # Expense Tracker – Frontend
 
+Live Demo (free trial might take 50 seconds to start) : https://expense-tracker-frontend-hpyv.onrender.com
+
 A React-based frontend for an expense-sharing application that allows users to create groups, add shared expenses, and view aggregated user-wise debts.
 
 The application consumes REST APIs exposed by a Spring Boot backend. All debt calculations are handled on the backend to ensure consistency and correctness.
